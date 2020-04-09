@@ -1,0 +1,16 @@
+{
+  "name": "reload",
+  "version": "1.0",
+  "description": "reload!",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.com/gp/buy/shipoptionselect/handlers/display.html?hasWorkingJavascript=1"
+      ],
+      "js": ["content.js"]
+    }],
+  "web_accessible_resources": [
+    "ding.mp3"
+  ]
+}

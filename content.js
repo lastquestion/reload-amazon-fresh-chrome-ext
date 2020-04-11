@@ -6,7 +6,7 @@ const init = () => {
     // - "No delivery windows available", 
     // - "No attended delivery windows are available"
     // - "No doorstep delivery windows are available";   
-  if (entireBody.search(/No(.*)delivery windows(.*)are available/) !== -1) {
+  if (entireBody.search(/No(.*)delivery windows(.*)available/) !== -1) {
     console.log('no avail');
     console.log('waiting 30 seconds');
     setTimeout(() => {

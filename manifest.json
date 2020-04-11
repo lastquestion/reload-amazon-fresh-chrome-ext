@@ -1,7 +1,7 @@
 {
-  "name": "reload",
+  "name": "amazon-fresh-checkout",
   "version": "1.0",
-  "description": "reload!",
+  "description": "Grab an Amazon Fresh slot at checkout",
   "manifest_version": 2,
   "content_scripts": [
     {

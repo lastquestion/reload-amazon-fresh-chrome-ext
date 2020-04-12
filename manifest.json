@@ -3,6 +3,15 @@
   "version": "1.0",
   "description": "Grab an Amazon Fresh slot at checkout",
   "manifest_version": 2,
+  "permissions": ["storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
   "content_scripts": [
     {
       "matches": [

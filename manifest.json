@@ -18,8 +18,7 @@
         "https://www.amazon.com/gp/buy/shipoptionselect/handlers/display.html?hasWorkingJavascript=1"
       ],
       "js": ["content.js"]
-    }],
-  "web_accessible_resources": [
-    "ding.mp3"
-  ]
+    }
+  ],
+  "web_accessible_resources": ["ding.mp3"]
 }

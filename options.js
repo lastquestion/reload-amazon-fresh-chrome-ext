@@ -1,7 +1,7 @@
 function save_options() {
-  const refresh_interval = document.getElementById('refresh_interval').value;
+  const refreshInterval = document.getElementById('refresh-interval').value;
 
-  chrome.storage.sync.set({refresh_interval: refresh_interval}, function() {
+  chrome.storage.sync.set({refreshInterval: refreshInterval}, function() {
     const status = document.getElementById('status');
     status.textContent = 'Options saved.';
     setTimeout(function() { status.textContent = ''; }, 750);
@@ -10,8 +10,8 @@ function save_options() {
 
 
 function restore_options() {
-  chrome.storage.sync.get({refresh_interval: 30}, function(data) {
-    document.getElementById('refresh_interval').value = data.refresh_interval;
+  chrome.storage.sync.get({refreshInterval: 30}, function(data) {
+    document.getElementById('refresh-interval').value = data.refreshInterval;
   });
 }
 

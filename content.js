@@ -11,12 +11,12 @@ const init = () => {
   if (entireBody.search(/No(.*)delivery windows(.*)available/) !== -1) {
     console.log('no avail');
 
-    chrome.storage.sync.get('refresh_interval', function(data) {
-      console.log(`waiting ${data.refresh_interval} seconds`);       
+    chrome.storage.sync.get('refreshInterval', function(data) {
+      console.log(`waiting ${data.refreshInterval} seconds`);       
 
       setTimeout(() => {
         window.location.reload();
-      }, data.refresh_interval * 1000);
+      }, data.refreshInterval * 1000);
     });
   }
   else {

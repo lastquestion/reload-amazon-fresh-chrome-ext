@@ -15,7 +15,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.amazon.com/gp/buy/shipoptionselect/handlers/display.html?hasWorkingJavascript=1"
+        "https://www.amazon.com/gp/buy/shipoptionselect/handlers/display.html?hasWorkingJavascript=1",
+        "https://smile.amazon.com/gp/buy/shipoptionselect/handlers/display.html?hasWorkingJavascript=1"
       ],
       "js": ["content.js"]
     }
